@@ -10,13 +10,21 @@
 </head>
 <body>
   <main class="container">
-    <div class="logo-container">
-      <img src="./images/logo.svg" alt="logo image" />
-    </div>
+  
+    <picture class="logo-container">
+      <source media="(max-width:767px)" width="120" height="30" srcset="./images/logo.webp">
+        <source media="(min-width:768px)" width="200" height="50" srcset="./images/logo.webp">
+      <img src="./images/logo.webp" alt="logo image" />
+    </picture>
+    
     <div class="hero-section">
-      <div class="illustration-container">
-        <img src="./images/illustration-mockups.svg" />
-      </div>
+      
+      <picture>
+        <source media="(max-width:767px)" width="295" height="210" srcset="./images/illustration-mockups.webp">
+        <source media="(min-width:768px)" width="700" height="500" srcset="./images/illustration-mockups.webp">
+        <img src="./images/illustration-mockups.webp" width="700" height="500" alt="mockup image">
+      </picture>
+>>>>>>> 1978bf2 (first commit)
       <div class="container-desc">
         <h1>Build The Community Your Fans Will Love</h1>
         <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience.Create connections with your users as you engage in genuine discussion.
@@ -25,9 +33,9 @@
       </div>
     </div>
     <div class="socials">
-      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-      <a href="#"><i class="fa-brands fa-twitter"></i></a>
-      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="facebook link"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" aria-label="twitter link"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" aria-label="instagram link"><i class="fa-brands fa-instagram"></i></a>
     </div>
   </main>
   
@@ -38,7 +46,7 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="">Mihailescu Fanush</a>.
+      Coded by <a href="https://github.com/Fanushhh">Mihailescu Fanush</a>.
     </p>
   </footer>
 </body>
